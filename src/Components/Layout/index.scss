@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+
+    .textarea {
+        color: white;
+        height: 50%;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+}

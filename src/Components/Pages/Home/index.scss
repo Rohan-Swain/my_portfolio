@@ -1,0 +1,51 @@
+.homepage {
+    
+    .textarea {
+
+        h1 {
+            font-size: 4em;
+            font-weight: 300;
+            line-height: 1.2;
+
+            &::before, &::after {
+                position: absolute;
+                font-family: 'La Belle Aurore';
+                font-size: 20px;
+                color: gold;
+                opacity: 0.8;
+            }
+
+            &::before {
+                content: '<h1>';
+                top: 0;
+            }
+
+            &::after {
+                content: '</h1>';
+                margin: 2em 0 0 1em;
+            }
+        }
+
+        h2 {
+            font-weight: 300;
+            color: gold;
+        }
+
+        a {
+            text-decoration: none;
+            color: gold;
+            font-weight: 400;
+            border: 1px solid gold;
+            border-radius: 12px;
+            padding: 12px 20px;
+            margin-top: 1em;
+            float: left;
+            transition: .2s ease all;
+
+            &:hover {
+                background-color: gold;
+                color: black;
+            }
+        }
+    }
+}
