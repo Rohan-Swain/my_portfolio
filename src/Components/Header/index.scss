@@ -1,19 +1,19 @@
 .header {
     background-color: black;
-    height: 6%;
-    width: 100%;
+    height: 100%;
+    width: 6%;
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
     #logo {
         display: block;
-        margin-left: 30px;
 
         img {
             display: block;
-            height: 100%;
-            width: auto;
+            height: auto;
+            width: 100%;
             filter: invert(1);
         }
     }
@@ -25,35 +25,85 @@
             padding: 0;
             height: 100%;
             display: flex;
+            flex-direction: column;
             
             li {
                 list-style: none;
-                margin-left: 25px;
-                margin-right: 25px;
-                height: 100%;
+                margin: 10px 0;
+                padding: 10px 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
+                &:nth-child(1) {
+                    a {
+                        &::before {
+                            content: 'HOME';
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    a {
+                        &::before {
+                            content: 'ABOUT'
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    a {
+                        &::before {
+                            content: 'PROJECTS'
+                        }
+                    }
+                }
+
                 a {
-                    width: 20px;
+                    width: 100%;
                     color: white;
                     text-decoration: none;
                     transition: .2s ease all;
                     position: relative;
                     text-align: center;
 
+                    svg {
+                        width: 30%;
+                        height: auto;
+                        transition: .2s ease all;
+                    }
+
+                    &:hover {
+                        svg {
+                            opacity: 0;
+                        }
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+
                     &:focus {
                         outline: none;
                     }
 
+                    &::before {
+                        color: gold;
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        left: 0;
+                        opacity: 0;
+                        transition: .2s ease all;
+                    }
+
                     &::after {
                         content: '';
-                        width: 20px;
+                        width: 25%;
                         height: 5px;
                         border-radius: 5px;
                         bottom: -8px;
-                        right: 0;
+                        right: calc(75% / 2);
                         position: absolute;
                         background-color: gold;
                         box-shadow: 0px 0px 10px 5px gold;
@@ -62,6 +112,10 @@
                     }
 
                     &.active {
+
+                        &::before {
+                            color: white;
+                        }
                         
                         &::after {
                             opacity: 1;
@@ -73,22 +127,27 @@
         }
     }
 
-    #contact {
+    #socials {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-right: 30px;
+        margin-bottom: 30px;
 
         a {
+            width: 100%;
+            text-align: center;
             text-decoration: none;
-            color: gold;
-            border: 1px solid gold;
-            padding: 8px 20px;
-            border-radius: 10px;
+            color: white;
+            margin: 10px 0;
             transition: .2s ease all;
 
+            svg {
+                width: 25%;
+                height: auto;
+            }
+
             &:hover {
-                background-color: gold;
-                color: black;
+                color: gold;
             }
         }
     }

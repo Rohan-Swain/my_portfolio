@@ -8,6 +8,7 @@ import {
   faProjectDiagram,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
   return (
@@ -34,10 +35,13 @@ function Header() {
           </li>
         </ul>
       </div>
-      <div id="contact">
-        <NavLink end to="/contact">
-          Let's Talk
-        </NavLink>
+      <div id="socials">
+        <a href="" target={"_blank"}>
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a href="" target={"_blank"}>
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
       </div>
     </div>
   );
