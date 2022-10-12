@@ -4,6 +4,7 @@ import LogoR from "../../assets/images/logo-r.png";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faEnvelope,
   faHome,
   faProjectDiagram,
   faUser,
@@ -31,6 +32,11 @@ function Header() {
           <li>
             <NavLink end to="/projects">
               <FontAwesomeIcon icon={faProjectDiagram} />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink end to="/contact">
+              <FontAwesomeIcon icon={faEnvelope} />
             </NavLink>
           </li>
         </ul>

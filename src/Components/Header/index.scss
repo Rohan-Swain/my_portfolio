@@ -59,6 +59,14 @@
                     }
                 }
 
+                &:nth-child(4) {
+                    a {
+                        &::before {
+                            content: 'CONTACT'
+                        }
+                    }
+                }
+
                 a {
                     width: 100%;
                     color: white;
