@@ -5,7 +5,7 @@ import AnimatedLetter from "../../Animation";
 function Homepage() {
   const [letterClass, setLetterClass] = useState("letters");
 
-  setTimeout(() => setLetterClass("letters-hover"), 4000);
+  setTimeout(() => setLetterClass("letters-hover"), 3000);
 
   return (
     <div className="container homepage">

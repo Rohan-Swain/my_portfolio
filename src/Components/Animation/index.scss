@@ -8,13 +8,11 @@
 }
 
 .letters-hover {
-
     display: inline-block;
+}
 
-    &:hover {
-        animation: jello 1s forwards;
-        color: gold;
-    }
+.letters-hover.animate {
+    animation: jello 1s forwards;
 }
 
 @for $i from 1 through 23 {
