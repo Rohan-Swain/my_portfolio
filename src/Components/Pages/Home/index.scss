@@ -11,24 +11,37 @@
                 position: absolute;
                 font-family: 'La Belle Aurore';
                 font-size: 20px;
-                color: gold;
+                color: lightslategrey;
                 opacity: 0.8;
             }
 
             &::before {
                 content: '<h1>';
-                top: 0;
+                top: 5%;
             }
 
             &::after {
                 content: '</h1>';
                 margin: 2em 0 0 1em;
+                animation: fadeIn 1s 2.3s backwards;
             }
         }
 
         h2 {
             font-weight: 300;
             color: gold;
+            animation: fadeIn 1s 2.3s backwards;
+
+            &::after {
+                content: '</h2>';
+                margin-left: 20px;
+                position: absolute;
+                font-family: 'La Belle Aurore';
+                font-size: 20px;
+                color: lightslategrey;
+                opacity: 0.8;
+                animation: fadeIn 1s 2.4s backwards;
+            }
         }
 
         a {
@@ -41,6 +54,18 @@
             margin-top: 1em;
             float: left;
             transition: .2s ease all;
+            animation: fadeIn 1s 2.3s backwards;
+
+            &::after {
+                content: '</button>';
+                margin-left: 50px;
+                position: absolute;
+                font-family: 'La Belle Aurore';
+                font-size: 20px;
+                color: lightslategrey;
+                opacity: 0.8;
+                animation: fadeIn 1s 2.4s backwards;
+            }
 
             &:hover {
                 background-color: gold;

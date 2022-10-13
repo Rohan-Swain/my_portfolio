@@ -1,0 +1,24 @@
+.space {
+    margin-left: 10px;
+}
+
+.letters {
+    display: inline-block;
+    animation: fadeIn 1s backwards;
+}
+
+.letters-hover {
+
+    display: inline-block;
+
+    &:hover {
+        animation: jello 1s forwards;
+        color: gold;
+    }
+}
+
+@for $i from 1 through 23 {
+    .letters._#{$i} {
+        animation-delay: #{$i / 10}s;
+    }
+}
