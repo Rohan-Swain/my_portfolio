@@ -1,0 +1,57 @@
+.aboutpage {
+
+    .textarea {
+        width: 40%;
+        
+        h1 {
+            color: gold;
+
+            &::after {
+                animation-delay: 1s;
+            }
+        }
+
+        p {
+            font-size: larger;
+            line-height: 1.4;
+            animation: fadeInUp 1.5s backwards;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.5s;
+                position: relative;
+
+                &::before {
+                    content: '<p>';
+                    font-size: 20px;
+                    font-family: 'La Belle Aurore';
+                    opacity: 0.8;
+                    color: lightslategrey;
+                    position: absolute;
+                    top: -20%;
+                }
+
+                &::after {
+                    content: '<br />';
+                    font-size: 20px;
+                    font-family: 'La Belle Aurore';
+                    opacity: 0.8;
+                    color: lightslategrey;
+                    margin-left: 0.8em;
+                }
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: 1.6s;
+
+                &::after {
+                    content: '</p>';
+                    font-size: 20px;
+                    font-family: 'La Belle Aurore';
+                    opacity: 0.8;
+                    color: lightslategrey;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}
