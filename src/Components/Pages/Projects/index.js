@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import AnimatedLetter from "../../Animation";
 import "./index.scss";
+import Container from "../../Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 
 function Projectspage() {
   const [letterClass, setLetterClass] = useState("letters");
@@ -23,8 +26,23 @@ function Projectspage() {
             spanStyle="space"
           />
         </h1>
-        <p>Here are some of my Best Projects.</p>
+        <div className="description">
+          <p>Here are some of my Best Projects.</p>
+          <p>
+            For More of my Projects,
+            <br />
+            checkout my CodePen
+          </p>
+          <a
+            target={"_blank"}
+            href="https://codepen.io/Rohan-Swain/pens/public"
+            title="CodePen"
+          >
+            <FontAwesomeIcon icon={faCodepen} className="codepenLogo" />
+          </a>
+        </div>
       </div>
+      <Container />
     </div>
   );
 }

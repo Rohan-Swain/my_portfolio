@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import LogoR from "../../assets/images/logo-r.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -12,6 +12,8 @@ import {
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
+  const location = useLocation();
+
   return (
     <div className="header">
       <div id="logo">
@@ -42,10 +44,22 @@ function Header() {
         </ul>
       </div>
       <div id="socials">
-        <a href="" target={"_blank"}>
+        <a
+          href=""
+          target={"_blank"}
+          className={
+            location.pathname === "/projects" ? "projectsHover" : "normalHover"
+          }
+        >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="" target={"_blank"}>
+        <a
+          href=""
+          target={"_blank"}
+          className={
+            location.pathname === "/projects" ? "projectsHover" : "normalHover"
+          }
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>

@@ -1,0 +1,68 @@
+.bgGraphic {
+    position: absolute;
+    background-color: gold;
+    width: 100%;
+    height: 30%;
+    bottom: 10%;
+    transform: skew(-20deg) rotateZ(-15deg); 
+    animation: strokeIn 1s 1.5s backwards;
+}
+
+.projectsContainer {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    right: 0;
+    bottom: 0;
+    
+    li {
+        list-style: none;
+        .pc {
+            position: absolute;
+            background-color: black;
+            color: white;
+            border: 1px solid gold;
+            top: -40%;
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            animation: fadeInUp 1.5s backwards;
+
+            img {
+                margin-top: 10px;
+                width: 90%;
+                border-radius: 10px;
+            }
+        }
+
+        ._1 {
+            animation-delay: 2s;
+            right: 1%;
+            top: -70%;
+        }
+
+        ._2 {
+            animation-delay: 2.3s;
+            right: 38%;
+            top: -50%;
+        }
+
+        ._3 {
+            animation-delay: 2.6s;
+            right: 75%;
+            top: -30%;
+        }
+    }
+}
+
+@keyframes strokeIn {
+    0% {
+        transform: scaleX(0) skew(-20deg) rotateZ(-15deg);
+    }
+
+    100% {
+        transform: scaleX(100%) skew(-20deg) rotateZ(-15deg);
+    }
+}

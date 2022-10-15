@@ -1,6 +1,8 @@
 .projectspage {
+    overflow: clip;
 
     .textarea {
+        width: 40%;
 
         h1 {
             color: gold;
@@ -10,29 +12,75 @@
             }
         }
 
-        p {
-            font-size: larger;
-            line-height: 1.4;
-            animation: fadeInUp 1.5s 1.5s backwards;
-            position: relative;
-            
-            &::before {
-                content: '<p>';
-                font-size: 20px;
-                font-family: 'La Belle Aurore';
-                opacity: 0.8;
-                color: lightslategrey;
-                position: absolute;
-                top: -80%;
+        .description {
+            width: 100%;
+
+            p {
+                font-size: larger;
+                line-height: 1.4;
+                animation: fadeInUp 1.5s backwards;
+                position: relative;
+
+                &::after {
+                    font-size: 20px;
+                    font-family: 'La Belle Aurore';
+                    opacity: 0.8;
+                    color: lightslategrey;
+                    margin-left: 0.8em;
+                }
+
+                &:nth-of-type(1) {
+                    animation-delay: 1.3s;
+
+                    &::before {
+                        content: '<p>';
+                        font-size: 20px;
+                        font-family: 'La Belle Aurore';
+                        opacity: 0.8;
+                        color: lightslategrey;
+                        position: absolute;
+                        top: -90%;
+                    }
+
+                    &::after {
+                        content: '<br />';
+                        position: absolute;
+                        bottom: -32px;
+                        left: 0;
+                        margin-left: 0;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    animation-delay: 3.5s;
+                    margin-top: 10%;
+
+                    &::after {
+                        content: '</p>';
+                    }
+                }
             }
 
-            &::after {
-                content: '</p>';
-                font-size: 20px;
-                font-family: 'La Belle Aurore';
-                opacity: 0.8;
-                color: lightslategrey;
-                margin-left: 0.8em;
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                .codepenLogo {
+                    background-color: gold;
+                    color: black;
+                    padding: 10px;
+                    border-radius: 10px;
+                    animation: zoomInLeft 1.5s 3.7s backwards;
+                }
+
+                &:hover {
+
+                    .codepenLogo {
+                        box-shadow: 0px 0px 10px 4px gold;
+                    }
+                }
             }
         }
     }
