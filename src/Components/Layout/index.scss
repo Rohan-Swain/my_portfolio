@@ -37,3 +37,17 @@
         }
     }
 }
+
+.aboutpage ,.contactpage {
+    .textarea {
+        h1 {
+            color: gold;
+        }
+
+        p {
+            font-size: larger;
+            line-height: 1.4;
+            animation: fadeInUp 1.5s backwards;
+        }
+    }
+}
