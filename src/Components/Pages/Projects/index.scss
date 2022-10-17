@@ -66,13 +66,15 @@
                 text-decoration: none;
                 display: flex;
                 align-items: center;
-
+                position: absolute;
+                
                 .codepenLogo {
                     background-color: gold;
                     color: black;
                     padding: 10px;
                     border-radius: 10px;
                     animation: zoomInLeft 1.5s 3.7s backwards;
+                    transition: .2s ease all;
                 }
 
                 &:hover {
