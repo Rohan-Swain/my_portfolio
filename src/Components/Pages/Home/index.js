@@ -51,7 +51,7 @@ function Homepage() {
       </div>
       <Aboutpage />
       <Projectspage />
-      <Contactpage />
+      <Contactpage homepageClass={"homepageIntegration"} />
     </>
   );
 }

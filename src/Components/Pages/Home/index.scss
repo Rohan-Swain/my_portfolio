@@ -55,3 +55,20 @@
         }
     }
 }
+
+.homepageIntegration {
+    overflow: clip;
+
+    .textarea {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 10em;
+            background-color: gold;
+            transform: rotateZ(-14deg);
+            left: -60%;
+            top: -52.4%;
+        }
+    }
+}
