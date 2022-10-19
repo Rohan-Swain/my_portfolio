@@ -24,20 +24,23 @@ function Aboutpage() {
           />
         </h1>
         <p>
-          {/* placeholder */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-          {/* Placeholder */}
+          Hi!, I'm Rohan Swain, a Self-taught Frontend Developer from India. I
+          have a passion for creating stunning Web UIs, animations and creating
+          excellent UX which I myself would love to use.
         </p>
         <p>
-          {/* placeholder */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-          {/* Placeholder */}
+          I'm quiet confident, problem solver with high attention to detail,
+          fast-learner, Generally Curious and perpetually working to hone my
+          skills.
+        </p>
+        <p>
+          If I need to define myself in one sentence, that would be 'A
+          Tech-Obsessed, Car guy who also loves to take photographs and play
+          Videogames.'
+        </p>
+        <p>
+          <span>When I'm not using VS Code (My Favourite):</span> I'm probably
+          travelling, playing Videogames or making 3D Scenes.
         </p>
       </div>
     </div>
