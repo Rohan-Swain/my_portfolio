@@ -1,12 +1,35 @@
 import React, { useState } from "react";
 import AnimatedLetter from "../../Animation";
 import "./index.scss";
-import Container from "../../Container";
+import Container from "./Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodepen } from "@fortawesome/free-brands-svg-icons";
+import ProjectLogo1 from "../../../assets/images/denoise.png";
 
 function Projectspage() {
   const [letterClass, setLetterClass] = useState("letters");
+  const projectArray = [
+    {
+      src: ProjectLogo1,
+      alt: "Project1",
+    },
+    {
+      src: ProjectLogo1,
+      alt: "Project2",
+    },
+    {
+      src: ProjectLogo1,
+      alt: "Project3",
+    },
+    {
+      src: ProjectLogo1,
+      alt: "Project4",
+    },
+    {
+      src: ProjectLogo1,
+      alt: "Project5",
+    },
+  ];
 
   setTimeout(() => setLetterClass("letters-hover"), 2000);
 
@@ -37,12 +60,13 @@ function Projectspage() {
             target={"_blank"}
             href="https://codepen.io/Rohan-Swain/pens/public"
             title="CodePen"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faCodepen} className="codepenLogo" />
           </a>
         </div>
       </div>
-      <Container />
+      <Container projectArray={projectArray} offset={1} />
     </div>
   );
 }

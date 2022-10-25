@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./index.scss";
 import AnimatedLetter from "../../Animation";
 
-function Contactpage({ homepageClass }) {
+function Contactpage() {
   const [letterClass, setLetterClass] = useState("letters");
 
   setTimeout(() => setLetterClass("letters-hover"), 1500);
@@ -13,7 +13,7 @@ function Contactpage({ homepageClass }) {
   };
 
   return (
-    <div className={`container contactpage ${homepageClass && homepageClass}`}>
+    <div className="container contactpage">
       <div className="textarea">
         <h1>
           <AnimatedLetter

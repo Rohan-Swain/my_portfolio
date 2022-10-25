@@ -149,25 +149,16 @@
             text-decoration: none;
             margin: 10px 0;
             transition: .2s ease all;
+            color: white;
+
+            &:hover {
+                color: gold;
+            }
 
             svg {
                 width: 25%;
                 height: auto;
             }
         }
-    }
-}
-
-.normalHover {
-    color: white;
-    &:hover {
-        color: gold;
-    }
-}
-
-.projectsHover {
-    color: white;
-    &:hover {
-        color: black;
     }
 }

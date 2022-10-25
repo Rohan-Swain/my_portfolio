@@ -1,0 +1,64 @@
+.projects {
+    width: 60%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    transition: .2s ease all;
+    filter: grayscale(1);
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &:hover {
+        transform: scale(140%);
+        z-index: 2;
+        filter: grayscale(0);
+
+        img {
+            box-shadow: 0px 0px 50px 40px black;
+        }
+    }
+}
+
+.o1 {
+    top: 37.5%;
+    left: 37.5%;
+    animation: zoomIn 1s 1.7s backwards;
+}
+
+.o2 {
+    top: 11.5%;
+    left: 37.5%;
+    animation: zoomInDown 1s 1.6s backwards;
+}
+
+.o3 {
+    left: 11%;
+    top: 37.5%;
+    animation: zoomInLeft 1s 1.8s backwards;
+}
+
+.o4 {
+    right: 11%;
+    bottom: 37.5%;
+    animation: zoomInRight 1s 1.9s backwards;
+}
+
+.o5 {
+    bottom: 11.5%;
+    left: 37.5%;
+    animation: zoomInUp 1s 2s backwards;
+}
