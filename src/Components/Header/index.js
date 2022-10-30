@@ -25,17 +25,17 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink end to="/about">
+            <NavLink end to="about">
               <FontAwesomeIcon icon={faUser} />
             </NavLink>
           </li>
           <li>
-            <NavLink end to="/projects">
+            <NavLink end to="projects">
               <FontAwesomeIcon icon={faProjectDiagram} />
             </NavLink>
           </li>
           <li>
-            <NavLink end to="/contact">
+            <NavLink end to="contact">
               <FontAwesomeIcon icon={faEnvelope} />
             </NavLink>
           </li>
