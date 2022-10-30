@@ -17,44 +17,89 @@
     display: flex;
     align-items: center;
     transition: .2s ease all;
-    filter: grayscale(1);
-
+    
     img {
+        height: 100%;
         width: 100%;
+        object-fit: cover;
         border-radius: 10px;
     }
 
-    &:hover {
-        transform: scale(140%);
-        z-index: 2;
-        filter: grayscale(0);
-
-        img {
-            box-shadow: 0px 0px 50px 40px black;
-        }
+    &:hover::before {
+        position: absolute;
+        width: 100%;
+        top: -10%;
+        color: gold;
+        text-align: center;
+        animation: fadeInUp 0.5s backwards;
+        letter-spacing: 5px;
+        font-size: 0.8em;
     }
 }
 
 .o1 {
     animation: zoomIn 1s 1.7s backwards;
+
+    img {
+        object-position: 0 0;
+    }
+
+    &:hover::before {
+        content: 'MY PORTFOLIO';
+    }
 }
 
 .o2 {
     margin-top: 26%;
     animation: zoomInDown 1s 2s backwards;
+
+    &:hover::before {
+        content: 'TESLA CLONE';
+    }
 }
 
 .o3 {
     margin-top: -26%;
     animation: zoomInUp 1s 2s backwards;
+
+    img {
+        object-position: 0 0;
+    }
+
+    &:hover::before {
+        content: 'KANJI DICTIONARY';
+    }
 }
 
 .o4 {
     margin-left: 26%;
     animation: zoomInLeft 1s 2s backwards;
+
+    &:hover::before {
+        content: 'POMODORO CLOCK';
+    }
 }
 
 .o5 {
     margin-left: -26%;
     animation: zoomInRight 1s 2s backwards;
+
+    img {
+        object-position: 0 0;
+    }
+
+    &:hover::before {
+        content: 'CRUD APP';
+    }
+}
+
+.hoverClass {
+    &:hover {
+        transform: scale(140%);
+        z-index: 2;
+
+        img {
+            box-shadow: 0px 0px 50px 40px black;
+        }
+    }
 }

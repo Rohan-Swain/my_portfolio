@@ -4,34 +4,41 @@ import "./index.scss";
 import Container from "./Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodepen } from "@fortawesome/free-brands-svg-icons";
-import ProjectLogo1 from "../../../assets/images/denoise.png";
+import ProjectLogo1 from "../../../assets/images/MP.png";
+import ProjectLogo2 from "../../../assets/images/TC.png";
+import ProjectLogo3 from "../../../assets/images/KD.png";
+import ProjectLogo4 from "../../../assets/images/PC.png";
+import ProjectLogo5 from "../../../assets/images/CA.png";
 
 function Projectspage() {
   const [letterClass, setLetterClass] = useState("letters");
+  const [hoverClass, setHoverClass] = useState("");
+
   const projectArray = [
     {
       src: ProjectLogo1,
-      alt: "Project1",
+      alt: "My Portfolio",
     },
     {
-      src: ProjectLogo1,
-      alt: "Project2",
+      src: ProjectLogo2,
+      alt: "Tesla Clone",
     },
     {
-      src: ProjectLogo1,
-      alt: "Project3",
+      src: ProjectLogo3,
+      alt: "Kanji Dictionary",
     },
     {
-      src: ProjectLogo1,
-      alt: "Project4",
+      src: ProjectLogo4,
+      alt: "Pomodoro Clock",
     },
     {
-      src: ProjectLogo1,
-      alt: "Project5",
+      src: ProjectLogo5,
+      alt: "CRUD App",
     },
   ];
 
   setTimeout(() => setLetterClass("letters-hover"), 2000);
+  setTimeout(() => setHoverClass("hoverClass"), 3500);
 
   return (
     <div className="container projectspage">
@@ -66,7 +73,11 @@ function Projectspage() {
           </a>
         </div>
       </div>
-      <Container projectArray={projectArray} offset={1} />
+      <Container
+        hoverClass={hoverClass}
+        projectArray={projectArray}
+        offset={1}
+      />
     </div>
   );
 }
