@@ -41,20 +41,20 @@
 
 .o2 {
     margin-top: 26%;
-    animation: zoomInDown 1s 1.6s backwards;
+    animation: zoomInDown 1s 2s backwards;
 }
 
 .o3 {
     margin-top: -26%;
-    animation: zoomInLeft 1s 1.8s backwards;
+    animation: zoomInUp 1s 2s backwards;
 }
 
 .o4 {
     margin-left: 26%;
-    animation: zoomInRight 1s 1.9s backwards;
+    animation: zoomInLeft 1s 2s backwards;
 }
 
 .o5 {
     margin-left: -26%;
-    animation: zoomInUp 1s 2s backwards;
+    animation: zoomInRight 1s 2s backwards;
 }
