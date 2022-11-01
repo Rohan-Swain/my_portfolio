@@ -18,22 +18,27 @@ function Projectspage() {
     {
       src: ProjectLogo1,
       alt: "My Portfolio",
+      liveLink: "",
     },
     {
       src: ProjectLogo2,
       alt: "Tesla Clone",
+      liveLink: "https://rohan-swain.github.io/tesla_clone/",
     },
     {
       src: ProjectLogo3,
       alt: "Kanji Dictionary",
+      liveLink: "https://rohan-swain.github.io/kanji-dictionary/",
     },
     {
       src: ProjectLogo4,
       alt: "Pomodoro Clock",
+      liveLink: "https://codepen.io/Rohan-Swain/full/jOYygjb",
     },
     {
       src: ProjectLogo5,
       alt: "CRUD App",
+      liveLink: "https://rohan-swain.github.io/crud-app/#/",
     },
   ];
 
