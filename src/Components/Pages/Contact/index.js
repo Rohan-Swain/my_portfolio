@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.scss";
 import AnimatedLetter from "../../Animation";
+import ContactLogo from "./ContactLogo";
 
 function Contactpage() {
   const [letterClass, setLetterClass] = useState("letters");
@@ -82,6 +83,7 @@ function Contactpage() {
           </div>
         </form>
       </div>
+      <ContactLogo />
     </div>
   );
 }
