@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.scss";
-import LogoR from "../../assets/images/logo-r.png";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,12 +9,13 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Logo from "./Logo";
 
 function Header() {
   return (
     <div className="header">
       <div id="logo">
-        <img src={LogoR} />
+        <Logo />
       </div>
       <div id="navbar">
         <ul>
@@ -45,7 +45,7 @@ function Header() {
         <a href="" target={"_blank"}>
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="" target={"_blank"}>
+        <a href="https://github.com/Rohan-Swain" target={"_blank"}>
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </div>
