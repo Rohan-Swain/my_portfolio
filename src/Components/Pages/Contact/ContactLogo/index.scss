@@ -16,5 +16,59 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-opacity: 1;
+
+        .whiteStroke {
+            stroke: white;
+        }
+
+        #first-message-box {
+            .message-content {
+                animation: fadeIn 1s backwards;
+            }
+
+            #heading1 {
+                animation-delay: 3s;
+            }
+            #heading2 {
+                animation-delay: 3.3s;
+            }
+            #first-line {
+                animation-delay: 3.8s;
+            }
+            #second-line {
+                animation-delay: 3.9s;
+            }
+            #third-line {
+                animation-delay: 4s;
+            }
+        }
+
+        #second-message-box {
+            #circleGroup {
+                animation: fadeIn 1s 6.5s backwards;
+
+                circle {
+                    animation: fadeIn 1s forwards;
+                    animation-iteration-count: infinite;
+                    
+                    &:nth-of-type(1) {
+                        animation-delay: .6s;
+                    }
+                    
+                    &:nth-of-type(2) {
+                        animation-delay: .4s;
+                    }
+                    
+                    &:nth-of-type(3) {
+                        animation-delay: .2s;
+                    }
+                }
+            }
+        }
     }
+}
+
+.dropShadow {
+    transition: .2s ease all;
+    filter: drop-shadow(0px 0px 2px white);
 }
