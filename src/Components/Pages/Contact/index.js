@@ -55,7 +55,7 @@ function Contactpage() {
             spanStyle={"space"}
           />
         </h1>
-        <p>For any Queries, feel free to contact me using the below form!</p>
+        <p>Have any questions? Send me an email or use the form below.</p>
         <form onSubmit={handleSubmit}>
           <div className="firstRow">
             <input
@@ -63,12 +63,14 @@ function Contactpage() {
               placeholder="Name"
               name="name"
               onChange={handleName}
+              required
             />
             <input
               type={"email"}
               placeholder="E-mail"
               name="email"
               onChange={handleEmail}
+              required
             />
           </div>
           <div className="remainingFields">
@@ -77,8 +79,9 @@ function Contactpage() {
               placeholder="Subject"
               name="subject"
               onChange={handleSubject}
+              required
             />
-            <textarea placeholder="Message" onChange={handleMessage} />
+            <textarea placeholder="Message" onChange={handleMessage} required />
             <button type="submit">Send!</button>
           </div>
         </form>

@@ -3,6 +3,8 @@ import gsap from "gsap-trial";
 import { DrawSVGPlugin } from "gsap-trial/DrawSVGPlugin";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 function ContactLogo() {
   const messageBoxOutlineRef = useRef();
@@ -35,17 +37,22 @@ function ContactLogo() {
           delay: 1.8,
         }
       );
+
+    dropShadow();
   }, []);
 
-  setTimeout(
-    () => messageBoxOutlineRef.current.classList.add("dropShadow"),
-    3000
-  );
+  const dropShadow = () => {
+    setTimeout(
+      () => messageBoxOutlineRef.current.classList.add("dropShadow"),
+      3000
+    );
 
-  setTimeout(
-    () => messageBoxOutlineRef2.current.classList.add("dropShadow"),
-    6300
-  );
+    setTimeout(
+      () => messageBoxOutlineRef2.current.classList.add("dropShadow"),
+      6300
+    );
+    return undefined;
+  };
 
   return (
     <div id="contactLogo">
@@ -120,6 +127,12 @@ function ContactLogo() {
           </g>
         </g>
       </svg>
+      <a id="email-span" href="mailto:abcd@gmail.com">
+        <span>
+          <FontAwesomeIcon id="atLogo" icon={faAt} />
+          abcd@gmail.com
+        </span>
+      </a>
     </div>
   );
 }
