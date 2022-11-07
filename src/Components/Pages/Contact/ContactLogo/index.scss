@@ -1,0 +1,95 @@
+#contactLogo {
+    position: absolute;
+    right: 0;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #messageSVG {
+        height: auto;
+        width: 50%;
+        stroke-width: 0.4px;
+        stroke: gold;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-opacity: 1;
+
+        .whiteStroke {
+            stroke: white;
+        }
+
+        #first-message-box {
+            .message-content {
+                animation: fadeIn 1s backwards;
+            }
+
+            #heading1 {
+                animation-delay: 3s;
+            }
+            #heading2 {
+                animation-delay: 3.3s;
+            }
+            #first-line {
+                animation-delay: 3.8s;
+            }
+            #second-line {
+                animation-delay: 3.9s;
+            }
+            #third-line {
+                animation-delay: 4s;
+            }
+        }
+
+        #second-message-box {
+            #circleGroup {
+                animation: fadeIn 1s 6.5s backwards;
+
+                circle {
+                    animation: fadeIn 1s forwards;
+                    animation-iteration-count: infinite;
+                    
+                    &:nth-of-type(1) {
+                        animation-delay: .6s;
+                    }
+                    
+                    &:nth-of-type(2) {
+                        animation-delay: .4s;
+                    }
+                    
+                    &:nth-of-type(3) {
+                        animation-delay: .2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropShadow {
+    transition: .2s ease all;
+    filter: drop-shadow(0px 0px 2px white);
+}
+
+#email-span {
+    animation: fadeInUp 1s 4.3s backwards; 
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gold;
+    bottom: 0;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+
+    #atLogo {
+        color: gold;
+        position: absolute;
+        left: -14%;
+        top: 12%;
+    }
+}
