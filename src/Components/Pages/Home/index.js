@@ -4,6 +4,7 @@ import AnimatedLetter from "../../Animation";
 import Aboutpage from "../About";
 import Projectspage from "../Projects";
 import Contactpage from "../Contact";
+import Logo from "./Logo";
 
 function Homepage() {
   const [letterClass, setLetterClass] = useState("letters");
@@ -48,6 +49,7 @@ function Homepage() {
           <h2>Frontend Developer | React Developer</h2>
           <a href="">See My Resume</a>
         </div>
+        <Logo />
       </div>
       <Aboutpage />
       <Projectspage />

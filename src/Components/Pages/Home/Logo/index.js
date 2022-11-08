@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.scss";
 
-function Logo() {
+function HomepageLogo() {
   return (
-    <div id="logo-wrapper">
+    <div id="homepageLogo">
       <svg
         width="98.304237"
         height="106.26083"
@@ -96,4 +96,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+export default HomepageLogo;

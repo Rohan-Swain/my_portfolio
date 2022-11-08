@@ -57,15 +57,15 @@ function Aboutpage() {
         <h1>Skills</h1>
         <div id="logoContainer">
           <ul>
-            {logoArr.slice(0, 3).map((item) => (
-              <li>
+            {logoArr.slice(0, 3).map((item, index) => (
+              <li key={index}>
                 <FontAwesomeIcon icon={item} className="skillLogo" />
               </li>
             ))}
           </ul>
           <ul>
-            {logoArr.slice(3, 6).map((item) => (
-              <li>
+            {logoArr.slice(3, 6).map((item, index) => (
+              <li key={index}>
                 <FontAwesomeIcon icon={item} className="skillLogo" />
               </li>
             ))}
