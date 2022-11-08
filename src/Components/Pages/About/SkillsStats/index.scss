@@ -1,0 +1,183 @@
+#statsView {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    height: 50%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: gold;
+        font-size: 3em;
+        font-weight: 300;
+        width: 100%;
+        z-index: 1;
+        padding-right: 1.4em;
+        text-align: end;
+        position: relative;
+        margin-top: 43px;
+
+        &::before {
+            content: '<h1>';
+            color: lightslategrey;
+            position: absolute;
+            top: -40%;
+            right: 13%;
+            font-size: 18px;
+            font-family: 'La Belle Aurore';
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: slategrey;
+            bottom: 10%;
+            right: 18%;
+            height: 20%;
+            width: 18%;
+            z-index: -1;
+            animation: fadeInRight 1s 3.5s backwards;
+        }
+    }
+
+    #logoContainer {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+
+        &::before {
+            content: '</h1>';
+            color: lightslategrey;
+            font-family: "La Belle Aurore";
+            font-size: 18px;
+            position: absolute;
+            top: -8%;
+            right: 8%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50%;
+            width: 80%;
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                font-size: 4em;
+                margin: 0 0.2em;
+                position: relative;
+                transition: .2s ease all;
+                color: slategrey;
+                border-radius: 25%;
+                height: fit-content;
+                background-color: rgba(black, 0.8);
+
+                &:hover::before {
+                    position: absolute;
+                    color: white;
+                    font-size: 0.1em;
+                    top: 7%; 
+                    width: 100%;
+                    text-align: center;
+                    animation: fadeInUp 0.5s backwards;
+                }
+
+                &:hover {
+                    transform: scale(200%);
+                    box-shadow: 0px 0px 50px 10px black;
+                    z-index: 3;
+                }
+            }
+
+            &:nth-of-type(1) {
+                li {
+                    &:nth-of-type(1) {
+                        &:hover {
+                            color: #f06529;
+                        }
+    
+                        &:hover::before {
+                            content: 'HTML5'
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        &:hover {
+                            color: #2965f1;
+                        }
+    
+                        &:hover::before {
+                            content: 'CSS3'
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+
+                        &:hover {
+                            color: yellow;
+                        }
+
+                        &:hover::before {
+                            content: 'JAVASCRIPT'
+                        }
+                    }
+                }
+            } 
+
+            &:nth-of-type(2) {
+                li {
+                    &:nth-of-type(1) {
+
+                        &:hover {
+                            color: #f06529;
+                        }
+
+                        &:hover::before {
+                            content: 'GIT'
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+
+                        &:hover {
+                            color: #c69;
+                        }
+
+                        &:hover::before {
+                            content: 'SASS'
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+
+                        &:hover {
+                            color: #61DBFB;
+                        }
+
+                        &:hover::before {
+                            content: 'REACT'
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.SkillsLogo {
+    animation: fadeInUp 1s backwards;
+}
+
+@for $i from 20 through 26 {
+    .SkillsLogo._#{$i} {
+        animation-delay: #{$i / 5}s;
+    }
+}

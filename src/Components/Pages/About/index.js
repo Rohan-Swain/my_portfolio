@@ -1,19 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import AnimatedLetter from "../../Animation";
 import "./index.scss";
-import {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faGitAlt,
-  faSass,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
+import SkillsStats from "./SkillsStats";
 
 function Aboutpage() {
   const [letterClass, setLetterClass] = useState("letters");
-  const logoArr = [faHtml5, faCss3Alt, faJs, faGitAlt, faSass, faReact];
 
   setTimeout(() => setLetterClass("letters-hover"), 1500);
 
@@ -53,25 +44,7 @@ function Aboutpage() {
           travelling, playing Videogames or making 3D Scenes.
         </p>
       </div>
-      <div id="statsView">
-        <h1>Skills</h1>
-        <div id="logoContainer">
-          <ul>
-            {logoArr.slice(0, 3).map((item, index) => (
-              <li key={index}>
-                <FontAwesomeIcon icon={item} className="skillLogo" />
-              </li>
-            ))}
-          </ul>
-          <ul>
-            {logoArr.slice(3, 6).map((item, index) => (
-              <li key={index}>
-                <FontAwesomeIcon icon={item} className="skillLogo" />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      <SkillsStats />
     </div>
   );
 }
