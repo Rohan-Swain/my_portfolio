@@ -16,8 +16,12 @@
         }
 
         #rectangle {
-            fill: gold;
             stroke: gold;
+            transition: 1s ease all;
         }
     }
+}
+
+.fillColor {
+    fill: gold;
 }
