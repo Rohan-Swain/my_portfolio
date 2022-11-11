@@ -108,3 +108,122 @@
         }
     }
 }
+
+@media(max-width: '900px') {
+    .projects {
+        float: unset;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+
+    .logo {
+        position: relative;
+        left: unset;
+        top: unset;
+        width: 80%;
+        height: 12em;
+        margin: 5em 0;
+        border: 2px solid gold;
+        border-radius: 10px;
+        animation: fadeInUp 1s 1.7s backwards;
+    }
+
+    .o1 {
+        animation-delay: 1.7s;
+
+        &::after {
+            content: 'My Portfolio';
+            color: gold;
+            position: absolute;
+            bottom: -20%;
+            width: 100%;
+            text-align: center;  
+        }
+        
+        &:hover::before {
+            content: unset;
+        }
+    }
+
+    .o2 {
+        animation-delay: 1.8s;
+
+        &::after {
+            content: 'Tesla Clone';
+            color: gold;
+            position: absolute;
+            bottom: -20%;
+            width: 100%;
+            text-align: center;  
+        }
+
+        &:hover::before {
+            content: unset;
+        }
+    }
+
+    .o3 {
+        animation-delay: 1.9s;
+
+        &::after {
+            content: 'Kanji Dictionary';
+            color: gold;
+            position: absolute;
+            bottom: -20%;
+            width: 100%;
+            text-align: center;  
+        }
+
+        &:hover::before {
+            content: unset;
+        }
+    }
+
+    .o4 {
+        animation-delay: 2s;
+
+        &::after {
+            content: 'Pomodoro Clock';
+            color: gold;
+            position: absolute;
+            bottom: -20%;
+            width: 100%;
+            text-align: center;  
+        }
+
+        &:hover::before {
+            content: unset;
+        }
+    }
+
+    .o5 {
+        animation-delay: 2.1s;
+
+        &::after {
+            content: 'Diary App';
+            color: gold;
+            position: absolute;
+            bottom: -20%;
+            width: 100%;
+            text-align: center;  
+        }
+
+        &:hover::before {
+            content: unset;
+        }
+    }
+
+    .hoverClass {
+        &:hover {
+            transform: none;
+            z-index: unset;
+            img {
+                box-shadow: none;
+            }
+        }
+    }
+}

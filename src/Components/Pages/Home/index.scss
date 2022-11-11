@@ -3,8 +3,14 @@
     .textarea {
 
         h1 {
+
+            &::before {
+                top: 4%;
+            }
+
             &::after {
                 animation-delay: 2.3s;
+                margin-top: 10%;
             }
         }
 
@@ -51,6 +57,40 @@
             &:hover {
                 background-color: gold;
                 color: black;
+            }
+        }
+    }
+}
+
+@media(max-width: '900px') {
+    .homepage {
+        .textarea {
+            h1 {
+                &::after {
+                    margin-left: 3%;
+                    font-size: 15px;
+                }
+
+                &::before {
+                    font-size: 15px;
+                }
+            }
+
+            h2 {
+                font-size: large;
+                &::after {
+                    margin: 1% 0 0 3%;
+                    font-size: 15px;
+                }
+            }
+
+            a {
+                font-size: medium;
+
+                &::after {
+                    font-size: 15px;
+                    margin-left: 12%;
+                }
             }
         }
     }

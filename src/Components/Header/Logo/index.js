@@ -92,6 +92,7 @@ function Logo() {
           </g>
         </g>
       </svg>
+      <span>ROHAN</span>
     </div>
   );
 }

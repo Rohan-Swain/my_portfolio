@@ -10,6 +10,10 @@
             &::after {
                 animation-delay: 1.2s;
             }
+
+            &::before, &::after {
+                top: 2%;
+            }
         }
 
         p {
@@ -26,7 +30,7 @@
             &::before {
                 content: '<p>';
                 position: absolute;
-                top: -100%;
+                top: -40%;
             }
 
             &::after {
@@ -106,6 +110,77 @@
                     &:hover {
                         color: black;
                         background-color: gold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: '900px') {
+    .contactpage {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        min-height: 100%;
+    
+        .textarea {
+            width: 80%;
+            height: 100%;
+            position: relative;
+            left: unset;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 20%;
+
+            h1 {
+                &::before, &::after {
+                    font-size: 15px;
+                }
+
+                &::before {
+                    margin-top: 5px;
+                }
+
+                &::after {
+                    margin-top: 13%;
+                }
+            }
+
+            p {
+                &::before, &::after {
+                    font-size: 15px;
+                }
+            }
+            
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .firstRow {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    input {
+                        width: 100%;
+                        margin: 0.4em 0 0 0 !important;
+                        padding-left: 3em;
+                    }
+                }
+
+                .remainingFields {
+                    align-items: center;
+                    input {
+                        width: 100%;
+                        padding-left: 3em;
+                    }
+                    textarea {
+                        width: 100%;
+                        padding-left: 3em;
                     }
                 }
             }

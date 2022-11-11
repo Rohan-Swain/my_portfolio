@@ -9,6 +9,7 @@
 
             &::after {
                 animation-delay: 1.2s;
+                margin-top: 8%;
             }
         }
 
@@ -38,7 +39,7 @@
                         opacity: 0.8;
                         color: lightslategrey;
                         position: absolute;
-                        top: -90%;
+                        top: -110%;
                     }
                 }
 
@@ -76,4 +77,56 @@
             }
         }
     }
+}
+
+@media(max-width: '900px') {
+    .projectspage {
+        min-height: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .textarea {
+            position: relative;
+            width: 80%;
+            height: auto;
+            margin-top: 20%;
+
+            h1 {
+                &::after, &::before {
+                    font-size: 15px;
+                }
+
+                &::before {
+                    margin-top: 2%;
+                }
+            }
+
+            .description {
+                p {
+                    &:nth-of-type(1) {
+                        &::before {
+                            font-size: 15px;
+                            margin-top: 5px;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        animation-delay: 2.3s;
+
+                        &::after {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                a {
+                    .codepenLogo {
+                        animation-delay: 2.4s;
+                    }
+                }
+            }
+        }
+    }    
 }

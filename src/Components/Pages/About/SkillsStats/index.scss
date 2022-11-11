@@ -181,3 +181,9 @@
         animation-delay: #{$i / 5}s;
     }
 }
+
+@media(max-width: '900px') {
+    #statsView {
+        display: none;
+    }
+}

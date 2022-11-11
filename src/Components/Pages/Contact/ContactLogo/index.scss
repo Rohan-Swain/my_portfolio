@@ -93,3 +93,9 @@
         top: 12%;
     }
 }
+
+@media(max-width: '900px') {
+    #contactLogo {
+        display: none;
+    }
+}

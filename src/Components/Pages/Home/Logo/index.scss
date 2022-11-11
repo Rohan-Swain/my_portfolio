@@ -25,3 +25,9 @@
 .fillColor {
     fill: gold;
 }
+
+@media(max-width: '900px') {
+    #homepageLogo {
+        display: none;
+    }
+}
