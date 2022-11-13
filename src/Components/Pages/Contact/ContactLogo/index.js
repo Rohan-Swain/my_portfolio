@@ -127,12 +127,6 @@ function ContactLogo() {
           </g>
         </g>
       </svg>
-      <a id="email-span" href="mailto:abcd@gmail.com">
-        <span>
-          <FontAwesomeIcon id="atLogo" icon={faAt} />
-          abcd@gmail.com
-        </span>
-      </a>
     </div>
   );
 }

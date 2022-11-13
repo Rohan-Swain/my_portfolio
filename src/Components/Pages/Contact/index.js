@@ -31,7 +31,7 @@ function Contactpage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const mail = document.createElement("a");
-    mail.href = `mailto:rohanswain2003@gmail.com?subject=${subject
+    mail.href = `mailto:contact.rohanswain@gmail.com?subject=${subject
       .split(" ")
       .join("%20")}&body=${name.split(" ").join("%20")}%0D%0D${email
       .split("@")
