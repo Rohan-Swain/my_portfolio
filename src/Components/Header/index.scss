@@ -73,6 +73,10 @@
                         width: 30%;
                         height: auto;
                         transition: .2s ease all;
+
+                        @media (min-width: '1920px') {
+                            width: 20%;
+                        }
                     }
 
                     &:hover {
@@ -150,6 +154,10 @@
             svg {
                 width: 25%;
                 height: auto;
+
+                @media (min-width: '1920px') {
+                    width: 20%;
+                }
             }
         }
     }
@@ -164,18 +172,8 @@
         position: fixed;
         height: 10%;
         width: 100%;
-        display: flex;
-        justify-content: center;
 
-        #logo {
-            display: none;
-        }
-
-        #navbar {
-            display: none;
-        }
-
-        #socials {
+        #logo, #navbar, #socials {
             display: none;
         }
 
@@ -260,9 +258,10 @@
 
                 #mobSocials {
                     font-size: 0.8em;
-                    color: gold;
                     
-                    span {
+                    a {
+                        text-decoration: none;
+                        color: gold;
                         margin: 0 0.5em;
                     }
                 }

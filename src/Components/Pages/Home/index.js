@@ -54,6 +54,7 @@ function Homepage() {
       <Aboutpage />
       <Projectspage />
       <Contactpage />
+      <span id="footer">BUILD BY ROHAN SWAIN</span>
     </>
   );
 }

@@ -6,7 +6,12 @@ function Container({ hoverClass, projectArray, offset }) {
     <ul className="projects">
       {projectArray.map((item, index) => (
         <li key={index} className={`logo ${hoverClass} o${offset + index}`}>
-          <a target={"_blank"} rel="noreferrer" href={item.liveLink}>
+          <a
+            target={"_blank"}
+            rel="noreferrer"
+            href={item.liveLink}
+            title="View Live Project"
+          >
             <img src={item.src} alt={item.alt} />
           </a>
         </li>

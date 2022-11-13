@@ -9,10 +9,7 @@
 
             &::after {
                 animation-delay: 1.2s;
-            }
-
-            &::before, &::after {
-                top: 2%;
+                margin-top: 5%;
             }
         }
 
@@ -140,11 +137,11 @@
                 }
 
                 &::before {
-                    margin-top: 5px;
+                    margin-top: -4%;
                 }
 
                 &::after {
-                    margin-top: 13%;
+                    margin-top: 5%;
                 }
             }
 
