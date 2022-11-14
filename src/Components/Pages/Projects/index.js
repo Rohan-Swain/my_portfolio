@@ -4,11 +4,11 @@ import "./index.scss";
 import Container from "./Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCodepen } from "@fortawesome/free-brands-svg-icons";
-import ProjectLogo1 from "../../../assets/images/MP.png";
-import ProjectLogo2 from "../../../assets/images/TC.png";
-import ProjectLogo3 from "../../../assets/images/KD.png";
-import ProjectLogo4 from "../../../assets/images/PC.png";
-import ProjectLogo5 from "../../../assets/images/CA.png";
+import ProjectLogo1 from "../../../assets/images/MP.webp";
+import ProjectLogo2 from "../../../assets/images/TC.webp";
+import ProjectLogo3 from "../../../assets/images/KD.webp";
+import ProjectLogo4 from "../../../assets/images/PC.webp";
+import ProjectLogo5 from "../../../assets/images/CA.webp";
 
 function Projectspage() {
   const [letterClass, setLetterClass] = useState("letters");
