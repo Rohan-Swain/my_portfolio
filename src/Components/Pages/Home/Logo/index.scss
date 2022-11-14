@@ -22,6 +22,22 @@
     }
 }
 
+.circlesvg {
+    stroke-dasharray: 6;
+    stroke-dashoffset: 6;
+    animation: animate 2s forwards;
+}
+
+.pathsvg {
+    stroke-dasharray: 45;
+    stroke-dashoffset: 45;
+    animation: animate 10s forwards;
+}
+
+.rect {
+    animation-duration: 8s;
+}
+
 .fillColor {
     fill: gold;
 }
