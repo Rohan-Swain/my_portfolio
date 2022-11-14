@@ -63,16 +63,14 @@
 }
 
 #footer {
-    position: absolute;
     font-size: 0.7em;
     font-family: sans-serif;
     letter-spacing: 10px;
-    padding: 20px 0;
     color: lightslategray;
-    background-color: transparent;
-    bottom: -300%;
     width: 100%;
     text-align: center;
+    position: absolute;
+    margin-top: -5%;
 }
 
 @media(max-width: '900px') {
@@ -109,7 +107,6 @@
     }
 
     #footer {
-        bottom: -456%;
         font-size: 0.5em;
         letter-spacing: 5px;
     }
