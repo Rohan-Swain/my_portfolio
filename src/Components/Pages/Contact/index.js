@@ -33,7 +33,9 @@ function Contactpage() {
     const mail = document.createElement("a");
     mail.href = `mailto:contact.rohanswain@gmail.com?subject=${subject
       .split(" ")
-      .join("%20")}&body=${name.split(" ").join("%20")}%0D%0D${email
+      .join("%20")}&body=Name%3A%20${name
+      .split(" ")
+      .join("%20")}%0D%0DEmail%3A%20${email
       .split("@")
       .join("%40")}%0D%0D${message.split(" ").join("%20")}`;
     mail.click();
