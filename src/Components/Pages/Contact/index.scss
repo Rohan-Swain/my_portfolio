@@ -146,6 +146,8 @@
             }
 
             p {
+                font-size: 0.9em;
+
                 &::before, &::after {
                     font-size: 15px;
                 }
@@ -156,6 +158,11 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                font-size: 0.8em;
+
+                input {
+                    height: 1em;
+                }
 
                 .firstRow {
                     display: flex;
@@ -171,13 +178,20 @@
 
                 .remainingFields {
                     align-items: center;
+
                     input {
                         width: 100%;
                         padding-left: 3em;
                     }
+                    
                     textarea {
                         width: 100%;
                         padding-left: 3em;
+                    }
+
+                    button {
+                        font-size: 0.9em;
+                        width: 8em;
                     }
                 }
             }

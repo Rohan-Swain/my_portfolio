@@ -36,6 +36,14 @@
 @media(max-width: '900px') {
     #logo-wrapper {
 
+        svg {
+            stroke-width: 0.6px;
+
+            #rectangle {
+                stroke-width: 0.4px;
+            }
+        }
+
         span {
             font-size: 0.3em;
         }
