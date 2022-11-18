@@ -5,6 +5,7 @@ import Aboutpage from "../About";
 import Projectspage from "../Projects";
 import Contactpage from "../Contact";
 import Logo from "./Logo";
+import Resume from "../../../assets/PDF/MyResume.pdf";
 
 function Homepage() {
   const [letterClass, setLetterClass] = useState("letters");
@@ -47,7 +48,9 @@ function Homepage() {
             />
           </h1>
           <h2>Frontend Developer | React Developer</h2>
-          <a href="">See My Resume</a>
+          <a href={Resume} target={"_blank"} rel="noreferrer">
+            See My Resume
+          </a>
         </div>
         <Logo />
       </div>
