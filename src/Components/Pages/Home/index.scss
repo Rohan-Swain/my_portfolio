@@ -42,6 +42,7 @@
             float: left;
             transition: .2s ease all;
             animation: fadeIn 1s 2.3s backwards;
+            font-size: unset;
 
             &::after {
                 content: '</button>';

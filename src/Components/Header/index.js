@@ -50,7 +50,7 @@ function Header() {
         </ul>
       </div>
       <div id="socials">
-        <a href="" target={"_blank"} rel="noreferrer">
+        <a href="https://bit.ly/3EfadBQ" target={"_blank"} rel="noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a
@@ -93,7 +93,12 @@ function Header() {
             </Link>
           </div>
           <div id="mobSocials">
-            <a href="" target={"_blank"} rel="noreferrer" id="linkedInlink">
+            <a
+              href="https://bit.ly/3EfadBQ"
+              target={"_blank"}
+              rel="noreferrer"
+              id="linkedInlink"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
